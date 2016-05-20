@@ -14,3 +14,6 @@
 
 * git status
 * git push origin master
+
+
+modify ssh public key
