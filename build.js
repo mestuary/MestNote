@@ -1,8 +1,8 @@
 var electronInstaller = require('electron-winstaller');
 
 resultPromise = electronInstaller.createWindowsInstaller({
-  appDirectory: './package/MestNote',
-  outputDirectory: '/build/MestNote',
+  appDirectory: './package/MestNote-win32-x64',
+  outputDirectory: './build',
   authors: 'Mestuary',
   exe: 'MestNote.exe'
 });
