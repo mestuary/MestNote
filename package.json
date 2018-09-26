@@ -4,19 +4,35 @@
   "description": "A Note Application",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "electron": "electron .",
+    "start": "webpack-dev-server --hot --inline",
     "packager": "electron-packager ./ MestNote --overwrite --out  ./package --arch=x64 --app-version=1.0.0"
   },
   "repository": "https://github.com/mestuary/MestNote",
   "keywords": [
     "Electron",
+    "React",
     "Note"
   ],
   "author": "Mestuary",
   "license": "CC0-1.0",
-  "devDependencies": {
+  "dependencies": {
     "electron": "^3.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-0": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
     "electron-packager": "^12.1.2",
-    "electron-winstaller": "^2.7.0"
+    "electron-winstaller": "^2.7.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
   }
 }
