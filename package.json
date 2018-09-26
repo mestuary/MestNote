@@ -15,7 +15,7 @@
     "Note"
   ],
   "author": "Mestuary",
-  "license": "CC0-1.0",
+  "license": "ISC",
   "dependencies": {
     "electron": "^3.0.0",
     "react": "^16.5.2",
